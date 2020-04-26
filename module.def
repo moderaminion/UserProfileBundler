@@ -1,0 +1,6 @@
+[Module]
+Name=UserProfileBundler
+Enabled=1
+Version=1
+Dependencies=minionlib,GW2Minion
+Files=Main.lua
