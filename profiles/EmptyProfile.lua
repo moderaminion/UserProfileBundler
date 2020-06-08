@@ -51,7 +51,7 @@ function PROFILE:DoProfile()
         PROFILE:MyVariables()
         if(api.V.castfix) then api:ResetCache() api.V.castfix = false end
     end
-    if(Player.incombat and api.V.heal and api.V.autoheal.state and Player.health.percent <= api.V.autoheal.percent) then
+    if(not Player.mounted and Player.incombat and api.V.heal and api.V.autoheal.state and Player.health.percent <= api.V.autoheal.percent) then
         if(api.V.heal.isgroundtargeted) then
             Player:CastSpellNoChecks(0, Player.id)
         else Player:CastSpellNoChecks(0) end
