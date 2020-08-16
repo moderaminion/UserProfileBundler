@@ -168,7 +168,7 @@ function API:Cast(skill,target,nolog) end
 function API:CheckCast(arg1,arg2,arg3,arg4) end
 ---Cast skill with precondition (last) and postcondition (next).
 ---If nil is passed for last then last won't be checked.
----Reminder: Watchout for transformations. If a transformation skill should be casted after transformation ended your rotation won't proceed (unless castfix is enabled)
+---Reminder: Watchout for transformations. If a transformation skill should be casted after transformation ended your rotation won't proceed
 ---@return boolean
 ---@param now string @skill name or V.WEAPONSWAP
 ---@param last string @skill name
@@ -228,7 +228,7 @@ function API:GetAltOffHandTypeBySystem() end
 ---@return boolean, number @multiple assignment local var1,var2 = API:HasWeaponEquipped(GW2.WEAPONTYPE.Sword)
 ---@param num number
 function API:HasWeaponEquipped(num) end
----Tries to fix rotation after 15 seconds of nothing happening (only applies when API:Cast2 used in profile)
+---Deprecated
 ---@return boolean
 function API:CastFix() end
 ---Same as reset button, resets whole profile to start from beginning

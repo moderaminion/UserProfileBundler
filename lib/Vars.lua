@@ -16,7 +16,6 @@ local VARS = {
     target = {},
     invulnerable = false,
     castfix = false,
-    enablecastfix = true,
     spvp = false,
     latency = 0,
 
