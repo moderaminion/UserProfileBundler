@@ -8,6 +8,7 @@ local VARS = {
     skills = {},
 	manuallyswap = false,
 	onlyattackwhenfacing = false,
+    stopwhendownedclose = false,
     items = {},
     targetlock = { entity = nil, lock = false },
     attackoutofcombat = false,
