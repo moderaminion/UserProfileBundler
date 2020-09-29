@@ -63,11 +63,11 @@ function API:HasOneOfBuffs(ids,onenemy) end
 ---@param onenemy boolean @optional
 function API:GetBuff(id,onenemy) end
 ---@return number
----@param onenemy boolean @optional
-function API:CountBoons(onenemy) end
+---@param target Player @optional defaults to Player
+function API:CountBoons(target) end
 ---@return number
----@param onenemy boolean @optional
-function API:CountConditions(onenemy) end
+---@param target Player @optional defaults to Player
+function API:CountConditions(target) end
 ---Locking target to set it as target every 2 seconds
 ---@return boolean
 ---@param target Player
